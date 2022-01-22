@@ -44,6 +44,14 @@ footer{
     text-align: center;
 }
 
+a.cv{
+    color: black;
+}
+
+a.cv:visited{
+    color:rgba(150, 129, 99, 0.877);
+}
+
 .navbar{
     background-image: url(/img/andrew-kliatskyi-tsmO0npD4pY-unsplash.jpg);
 }
