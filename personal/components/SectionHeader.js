@@ -1,10 +1,11 @@
 import { Container } from "react-bootstrap";
+import css from './SectionHeader.module.css';
 
 function SectionHeader({ title }) {
     return (
-        <Container>
-            <h1 className="title">{title}</h1>
-        </Container>
+        <>
+            <h1 className={`pt-5 ${css.titleHead}`}>{title}</h1>
+        </>
     )
 }
 
