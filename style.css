@@ -1,6 +1,5 @@
 body{
     font-family: 'Merriweather', serif;
-
 }
 
 img{
@@ -15,6 +14,13 @@ img{
 h1{
     size: 60px;
     text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+.full-name{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F9F6F0;
 }
 
 h2{
@@ -25,25 +31,26 @@ h5{
     text-align: center;
 }
 
-
 section.skills{
     display:flex;
     align-items: center;
     text-align: center;
     width: 100vw;
-    background-color: rgba(150, 129, 99, 0.877);
+    background-color: #F9F6F0;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 section.intro{
     display:flex;
     align-items: center;
     text-align: center;
     width: 100vw;
-    background-color: rgba(201, 170, 128, 0.877);
+    background-color: #C4AE78;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 section.contact{
     width: 100vw;
     background-image: url(/img/andrew-kliatskyi-tsmO0npD4pY-unsplash.jpg);
@@ -66,8 +73,12 @@ a.cv:visited{
 }
 
 .navbar{
+    overflow: hidden;
+    transition: 0.4;
+    position: fixed;
     background-image: url(/img/andrew-kliatskyi-tsmO0npD4pY-unsplash.jpg);
 }
+
 
 a{
     text-decoration: none;
@@ -84,7 +95,7 @@ section.hero{
     height: 100vh;
     align-items: center;
     text-align: center;
-    background-color: rgb(216, 216, 216);
+    background-image: url(/img/tim-mossholder-8YfoqbLsIW0-unsplash.jpg);
 }
 
 .card{
@@ -99,6 +110,7 @@ section.hero{
     background-color: transparent;
     text-align: center;
 }
+
 
 @media screen and (max-width: 600px){
     .wrapper {
