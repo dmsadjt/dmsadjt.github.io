@@ -1,5 +1,6 @@
 body{
     font-family: 'Merriweather', serif;
+
 }
 
 img{
@@ -45,7 +46,6 @@ section.intro{
 }
 section.contact{
     width: 100vw;
-    height: 100vh;
     background-image: url(/img/andrew-kliatskyi-tsmO0npD4pY-unsplash.jpg);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -93,6 +93,11 @@ section.hero{
 
 .foot{
     color:white;
+}
+
+.list-group-item{
+    background-color: transparent;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px){
