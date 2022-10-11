@@ -2,6 +2,39 @@ body {
     background-color: #B9B7BD !important;
 }
 
+@media screen and (min-width:321px) {
+    .columns-two {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .r-flex {
+        display: flex;
+    }
+
+    .r-show {
+        display: none;
+    }
+}
+
+@media screen and (max-width:321px) {
+
+    .r-hide {
+        display: none;
+    }
+
+    .r-show {
+        display: block;
+    }
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400 !important;
+}
+
 .bg-ivory {
     background-color: #EEEDE7;
 }
@@ -52,9 +85,4 @@ div {
 
 .mob {
     font-family: 'Montserrat', sans-serif;
-}
-
-.columns-two {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
