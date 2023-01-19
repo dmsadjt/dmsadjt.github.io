@@ -1,7 +1,3 @@
-body {
-    background-color: #B9B7BD !important;
-}
-
 @media screen and (min-width:321px) {
     .columns-two {
         display: grid;
@@ -85,4 +81,15 @@ div {
 
 .mob {
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url('/img/bg--2.jpg');
+    background-size: contain;
+}
+
+.gradient-purple-border {
+    border: solid 0.3em;
+    border-image: linear-gradient(#3d373e, #e1cfe4) 30;
+
 }
