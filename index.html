@@ -5,190 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        dmsadjt's personal website
-    </title>
+    <title>dmsadjt's personal website</title>
+    <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="d.ico" type="image/icon type">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="container">
-        <div class="d-grid vh-100">
-            <div class="my-auto p-5 shadow bg-white gradient-purple-border">
-                <div class="columns-two">
-                    <div>
-                        <div>dmsadjt</div>
-                        <h1>MUHAMMAD <span class="bg-black text-white">DIMAS</span> ADIJANTO</h1>
-                        <div>Student | Web Developer | Mobile Developer</div>
-                    </div>
-                    <div class="ms-auto r-flex">
-                        <a href="https://www.linkedin.com/in/dimmas/">
-                            <span class="r-show bg-black text-white " style="font-size:0.8rem;">LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/dmsadjt"><img
-                                src="https://pngimg.com/uploads/github/github_PNG40.png" alt="" style="width:5em;"
-                                class="r-hide">
-                            <span class="r-show bg-black text-white " style="font-size:0.8rem;">Github</span>
-
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
+    <div class="terminal-window">
+        <div class="window-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="window-title">~/</span>
         </div>
 
-        <div class="d-grid vh-100">
-            <div class="my-auto p-5 bg-white gradient-purple-border shadow">
-                <h2><img src="/img/icons8-moon-and-stars-100-2.png" style="width:1.5em" alt="">ABOUT</h2>
-                <p>A dreamer, problem solver, and a passionate learner. I am a student in Information Systems Department
-                    trying to learn as much things as I can to be able to become the best version of myself!</p>
-            </div>
-        </div>
-
-        <div class="mb-5">
-            <div class="p-5 bg-white gradient-purple-border shadow">
-                <h2><img src="/img/icons8-star-100.png" style="width:1.5em" alt="">STACKS</h2>
-                <!-- center -->
-                <div class="d-grid ">
-                    <h3 class="mt-3">Website Development</h3>
-                    <div>
-                        <span class="mt-3 bg-pink">Laravel</span>
-                        <div class="d-flex gap-1 flex-wrap">
-                            <div class="badge text-bg-dark">PHP</div>
-                            <div class="badge text-bg-dark">SQL</div>
-                            <div class="badge text-bg-dark">CSS</div>
-                            <div class="badge text-bg-dark">JavaScript</div>
-                            <div class="badge text-bg-dark">Bootstrap</div>
-                            <div class="badge text-bg-dark">Python</div>
-                        </div>
-                    </div>
-
-                    <h3 class="mt-1">Mobile Development</h3>
-                    <div>
-                        <span class="mt-3 bg-pink">Android</span>
-                        <div class="d-flex gap-1 flex-wrap">
-                            <div class="badge text-bg-dark">Kotlin</div>
-                            <div class="badge text-bg-dark">Java</div>
-                            <div class="badge text-bg-dark">SQL</div>
-                            <div class="badge text-bg-dark">XML</div>
-                            <div class="badge text-bg-dark">Jetpack Compose</div>
-                            <div class="badge text-bg-dark">Retrofit2</div>
-                        </div>
-                    </div>
-
+        <div class="bento">
+            <!-- Hero -->
+            <div class="pane pane-hero">
+                <div class="pane-bar">
+                    <span class="pane-title">~/whoami</span>
                 </div>
-                <!-- flex -->
-            </div>
-
-        </div>
-
-        <div class="h-auto mb-5">
-            <div class="p-5 bg-white gradient-purple-border shadow">
-                <h2><img src="/img/icons8-saturn-128.png" style="width:1.5em" alt="">PROJECTS</h2>
-                <hr>
-                <div class="d-grid">
-
-                    <div>
-                        <h3>1.</h3>
-                        <div>
-                            <img src="./img/altg.png" style="width: 15em;" class="rounded img-fluid shadow mb-1" alt="">
-                        </div>
-                        <div>
-                            A game wiki (wip)
-                        </div>
-                        <div class="fw-bold">Stacks </div>
-                        <div>
-                            Laravel (PHP), Livewire, JavaScript, CSS, Bootstrap 5
-                        </div>
-                        <a href="https://donmai.website">ALTG Website</a>
+                <div class="pane-body">
+                    <pre class="ascii-art"></pre>
+                    <span class="prompt">$</span> <span class="cmd">cat profile.txt</span>
+                    <div class="output">
+                        <p class="name">Muhammad Dimas Adijanto</p>
+                        <p class="jp">ムハンマド　ディマス　アディジャント</p>
+                        <p class="bio">I build systems. Based in Jakarta, dreaming of Japan.</p>
                     </div>
-
-                </div>
-                <hr>
-                <div>
-                    <h3>2.</h3>
-                    <div>
-                        <img src="./img/makamin.png" style="width: 15em;" class="rounded img-fluid shadow mb-1" alt="">
+                    <div class="links">
+                        <span class="prompt">$</span> <a href="https://www.linkedin.com/in/dimmas/" target="_blank">open linkedin</a>
+                        <br>
+                        <span class="prompt">$</span> <a href="https://github.com/dmsadjt" target="_blank">open github</a>
+                        <span class="prompt">$</span> <a href="https://file.notion.so/f/f/7c351d9a-9470-445f-b051-8684e5a64622/62212acd-7a5e-495c-b3ac-1985edce0c6c/CV_Muhammad_Dimas_Adijanto.pdf?table=block&id=329e2d1d-ed4e-80fb-a215-e8befcc785f9&spaceId=7c351d9a-9470-445f-b051-8684e5a64622&expirationTimestamp=1774036800000&signature=L_JRMOs29N-erRMtc7OcG6qkze7uZPtUla0WEhyu_No&downloadName=CV_Muhammad+Dimas+Adijanto.pdf" target="_blank">open resume</a>
+                        <span class="prompt">$</span> <a href="https://lava-server-db6.notion.site/Software-Developer-Portfolio-121e2d1ded4e80dea5bbde9ea6bbb018?source=copy_link" target="_blank">open notion portofolio</a>
                     </div>
-                    <div>
-                        Makamin, a project for ordering graves around cemeteries around Surabaya
-                    </div>
-                    <div class="fw-bold">Stacks </div>
-                    <div>
-                        Laravel, JavaScript, CSS, Bootstrap 5
-                    </div>
-                    <a href="https://makamin.donmai.website">Makamin Website</a>
-
-                </div>
-                <hr>
-                <div>
-                    <h3>3.</h3>
-                    <div>
-                        <img src="./img/tbc.png" style="width: 15em;" class="rounded img-fluid shadow mb-1" alt="">
-                    </div>
-                    <div>
-                        A simple website for deploying a model for detecting Tuberculosis based on an x-ray scan using
-                        streamlit
-                    </div>
-                    <div class="fw-bold">Stacks</div>
-                    <div>
-                        Python, Streamlit
-                    </div>
-                    <a href="https://dmsadjt-fp-ab-tbc-predict-tbc-5wpx7w.streamlit.app">Streamlit Website</a>
-                </div>
-                <hr>
-
-                <div>
-                    <h3>4.</h3>
-                    <div>
-                        <img src="./img/kotllin.png" style="width: 15em;" class="rounded img-fluid shadow mb-1" alt="">
-                    </div>
-                    <div>
-                        A Costume catalog application created using Kotlin
-                    </div>
-                    <div class="fw-bold">Stacks</div>
-                    <div>
-                        Kotlin
-                    </div>
-                    <a href="https://drive.google.com/file/d/1WqFsQFG5RhbUlcy8jNWLxiaZqns2Gtzz/view?usp=share_link">Download
-                        the App</a>
-                </div>
-                <hr>
-
-                <div>
-                    <h3>Note: </h3>
-                    <a href="https://drive.google.com/drive/folders/1dG3av9RxT6zSfhXpTkWp13IxpDKFxavP?usp=share_link">Follow
-                        this link for the drive version</a>
                 </div>
             </div>
 
-
-        </div>
-
-        <div class="mb-5">
-            <div class="bg-dark p-5 text-white gradient-purple-border shadow d-grid">
-                <h2><img src="/img/icons8-asteroid-96.png" style="width:1.5em" alt="">CONTACT INFORMATION</h2>
-                <h3 class="mt-4">Phone</h3>
-                <div style="font-size:0.8rem;">(+62) 87851224563</div>
-                <h3 class="mt-4">Email</h3>
-                <div style="font-size:0.8rem;">dimasadijanto17@gmail.com</div>
+            <!-- About -->
+            <div class="pane pane-about">
+                <div class="pane-bar">
+                    <span class="pane-title">~/about</span>
+                </div>
+                <div class="pane-body">
+                    <span class="prompt">$</span> <span class="cmd">cat about.md</span>
+                    <div class="output">
+                        <p>Current work: BOSNET Distribution Indonesia</p>
+                        <p>Main language: Indonesian, English, Japanese 日本語</p>
+                        <p>Education: Bachelor's in Computer Science (S.Kom) from Insitut Teknologi Sepuluh Nopember</p>
+                    </div>
+                    <span>$
+                        <span class="cursor">█</span>
+                    </span>
+                </div>
             </div>
-        </div>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
+            <!-- Stacks -->
+            <div class="pane pane-stacks">
+                <div class="pane-bar">
+                    <span class="pane-title">~/stacks</span>
+                </div>
+                <div class="pane-body">
+                    <span class="prompt">$</span> <span class="cmd">ls -1 skills/</span>
+                    <div class="output">
+                        <span class="dir" data-content="C# · Go · Kotlin · TypeScript · JavaScript">languages/</span>
+                        <span class="dir" data-content="Linux · Nginx · Apache ·  Postfix · Dovecot">infra/</span>
+                        <span class="dir" data-content="MySQL · SQL Server">databases/</span>
+                    </div>
+                    <div class="stack-expand" id="stack-expand"></div>
+                    <span>$
+                        <span class="cursor">█</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="pane pane-projects">
+                <div class="pane-bar">
+                    <span class="pane-title">~/projects</span>
+                </div>
+                <div class="pane-body">
+                    <span class="prompt">$</span> <span class="cmd">ls -la projects/</span>
+                    <div class="output">
+                        <span class="project-dir" data-detail="3-tier approval system with zone-based parallel processing logic. C# · .NET · Angular · TypeScript">approval-workflow/</span>
+                        <span class="project-dir" data-detail="Android app that helps children learn to read. Kotlin · MAUI">reading-app/</span>
+                        <span class="project-dir" data-detail="Production mail server for 2 domains. Postfix · Dovecot · Roundcube on VPS.">mail-server/</span>
+                    </div>
+                    <div class="stack-expand" id="project-expand"></div>
+                    <span>$
+                        <span class="cursor">█</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="pane pane-contact">
+                <div class="pane-bar">
+                    <span class="pane-title">~/contact</span>
+                </div>
+                <div class="pane-body">
+                    <span class="prompt">$</span> <span class="cmd">cat contact.json</span>
+                    <div class="output">
+                        <p>email: dimasadijanto17@gmail.com</p>
+                    </div>
+                    <span>$
+                        <span class="cursor">█</span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script>
+    function bindDirs(selector, expandId, dataKey, cmdPrefix) {
+        const dirs = document.querySelectorAll(selector);
+        const expand = document.getElementById(expandId);
+        dirs.forEach(dir => {
+            dir.addEventListener('click', () => {
+                const already = dir.classList.contains('active');
+                dirs.forEach(d => d.classList.remove('active'));
+                expand.innerHTML = '';
+                if (!already) {
+                    dir.classList.add('active');
+                    expand.innerHTML =
+                        `<span class="prompt">$</span> <span class="cmd">${cmdPrefix} ${dir.textContent}</span>` +
+                        `<div class="output expand-content">${dir.dataset[dataKey]}</div>`;
+                }
+            });
+        });
+    }
+
+    bindDirs('.dir',         'stack-expand',   'content', 'ls');
+    bindDirs('.project-dir', 'project-expand', 'detail',  'ls');
+</script>
 </body>
 
 </html>
