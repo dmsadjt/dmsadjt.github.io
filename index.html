@@ -8,139 +8,471 @@
     <title>dmsadjt's personal website</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="d.ico" type="image/icon type">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="terminal-window">
-        <div class="window-bar">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-            <span class="window-title">~/</span>
-        </div>
+    <div class="page">
 
-        <div class="bento">
-            <!-- Hero -->
-            <div class="pane pane-hero">
-                <div class="pane-bar">
-                    <span class="pane-title">~/whoami</span>
-                </div>
-                <div class="pane-body">
-                    <pre class="ascii-art"></pre>
-                    <span class="prompt">$</span> <span class="cmd">cat profile.txt</span>
-                    <div class="output">
-                        <p class="name">Muhammad Dimas Adijanto</p>
-                        <p class="jp">ムハンマド　ディマス　アディジャント</p>
-                        <p class="bio">I build systems. Based in Jakarta, dreaming of Japan.</p>
-                    </div>
-                    <div class="links">
-                        <span class="prompt">$</span> <a href="https://www.linkedin.com/in/dimmas/" target="_blank">open linkedin</a>
-                        <br>
-                        <span class="prompt">$</span> <a href="https://github.com/dmsadjt" target="_blank">open github</a>
-                        <span class="prompt">$</span> <a href="https://file.notion.so/f/f/7c351d9a-9470-445f-b051-8684e5a64622/62212acd-7a5e-495c-b3ac-1985edce0c6c/CV_Muhammad_Dimas_Adijanto.pdf?table=block&id=329e2d1d-ed4e-80fb-a215-e8befcc785f9&spaceId=7c351d9a-9470-445f-b051-8684e5a64622&expirationTimestamp=1774036800000&signature=L_JRMOs29N-erRMtc7OcG6qkze7uZPtUla0WEhyu_No&downloadName=CV_Muhammad+Dimas+Adijanto.pdf" target="_blank">open resume</a>
-                        <span class="prompt">$</span> <a href="https://lava-server-db6.notion.site/Software-Developer-Portfolio-121e2d1ded4e80dea5bbde9ea6bbb018?source=copy_link" target="_blank">open notion portofolio</a>
-                    </div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <p class="name">Muhammad Dimas Adijanto</p>
+                <p class="jp">ムハンマド　ディマス　アディジャント</p>
+                <p class="bio">I build systems. Based in Jakarta, dreaming of Japan.</p>
+            </div>
+
+            <ul class="link-list">
+                <li><a href="https://www.linkedin.com/in/dimmas/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/dmsadjt" target="_blank">GitHub</a></li>
+                <li><a href="https://file.notion.so/f/f/7c351d9a-9470-445f-b051-8684e5a64622/62212acd-7a5e-495c-b3ac-1985edce0c6c/CV_Muhammad_Dimas_Adijanto.pdf?table=block&id=329e2d1d-ed4e-80fb-a215-e8befcc785f9&spaceId=7c351d9a-9470-445f-b051-8684e5a64622&expirationTimestamp=1774036800000&signature=L_JRMOs29N-erRMtc7OcG6qkze7uZPtUla0WEhyu_No&downloadName=CV_Muhammad_Dimas_Adijanto.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://lava-server-db6.notion.site/Software-Developer-Portfolio-121e2d1ded4e80dea5bbde9ea6bbb018?source=copy_link" target="_blank">Notion portfolio</a></li>
+            </ul>
+
+            <div class="sidebar-section">
+                <p class="sidebar-heading">About</p>
+                <p class="about-line">Currently at BOSNET Distribution Indonesia</p>
+                <p class="about-line">Indonesian, English, Japanese 日本語</p>
+                <p class="about-line">S.Kom, Institut Teknologi Sepuluh Nopember</p>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="sidebar-heading">Stack</p>
+                <div class="tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Android</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Astro</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Nginx</span>
+                    <span class="tag">Apache</span>
+                    <span class="tag">Postfix</span>
+                    <span class="tag">Dovecot</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">SQL Server</span>
                 </div>
             </div>
 
-            <!-- About -->
-            <div class="pane pane-about">
-                <div class="pane-bar">
-                    <span class="pane-title">~/about</span>
-                </div>
-                <div class="pane-body">
-                    <span class="prompt">$</span> <span class="cmd">cat about.md</span>
-                    <div class="output">
-                        <p>Current work: BOSNET Distribution Indonesia</p>
-                        <p>Main language: Indonesian, English, Japanese 日本語</p>
-                        <p>Education: Bachelor's in Computer Science (S.Kom) from Insitut Teknologi Sepuluh Nopember</p>
-                    </div>
-                    <span>$
-                        <span class="cursor">█</span>
-                    </span>
-                </div>
+            <div class="sidebar-section">
+                <p class="sidebar-heading">Work</p>
+                <nav class="work-nav">
+                    <a href="#" class="work-link active" data-target="cs-wordpress-astro">WordPress to Astro rebuild</a>
+                    <a href="#" class="work-link" data-target="cs-pdf-viewer">Ditching the PDF library</a>
+                    <a href="#" class="work-link" data-target="cs-approval-engine">Multi-level approval engine</a>
+                    <a href="#" class="work-link" data-target="cs-notification-mapping">Notification mapping system</a>
+                    <a href="#" class="work-link" data-target="cs-mail-server">Production mail server</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="readme">
+            <div class="readme-file-bar">
+                <span class="file-icon">📄</span>
+                <span class="file-path" id="file-path">case-studies/wordpress-to-astro-rebuild.md</span>
             </div>
 
-            <!-- Stacks -->
-            <div class="pane pane-stacks">
-                <div class="pane-bar">
-                    <span class="pane-title">~/stacks</span>
-                </div>
-                <div class="pane-body">
-                    <span class="prompt">$</span> <span class="cmd">ls -1 skills/</span>
-                    <div class="output">
-                        <span class="dir" data-content="C# · Go · Kotlin · TypeScript · JavaScript">languages/</span>
-                        <span class="dir" data-content="Linux · Nginx · Apache ·  Postfix · Dovecot">infra/</span>
-                        <span class="dir" data-content="MySQL · SQL Server">databases/</span>
-                    </div>
-                    <div class="stack-expand" id="stack-expand"></div>
-                    <span>$
-                        <span class="cursor">█</span>
-                    </span>
-                </div>
-            </div>
+            <article class="markdown-body">
+                <div class="case-study active" id="cs-wordpress-astro">
+                    <h1>Rebuilding a Compromised Corporate Website: WordPress to Static Astro</h1>
 
-            <!-- Projects -->
-            <div class="pane pane-projects">
-                <div class="pane-bar">
-                    <span class="pane-title">~/projects</span>
-                </div>
-                <div class="pane-body">
-                    <span class="prompt">$</span> <span class="cmd">ls -la projects/</span>
-                    <div class="output">
-                        <span class="project-dir" data-detail="3-tier approval system with zone-based parallel processing logic. C# · .NET · Angular · TypeScript">approval-workflow/</span>
-                        <span class="project-dir" data-detail="Android app that helps children learn to read. Kotlin · MAUI">reading-app/</span>
-                        <span class="project-dir" data-detail="Production mail server for 2 domains. Postfix · Dovecot · Roundcube on VPS.">mail-server/</span>
-                    </div>
-                    <div class="stack-expand" id="project-expand"></div>
-                    <span>$
-                        <span class="cursor">█</span>
-                    </span>
-                </div>
-            </div>
+                    <table class="meta-table">
+                        <tr><td>Client</td><td>Industrial B2B company (heat transfer / engineering solutions)</td></tr>
+                        <tr><td>Role</td><td>Solo developer</td></tr>
+                        <tr><td>Stack</td><td><code>Astro</code> <code>TypeScript</code> <code>i18n routing</code></td></tr>
+                    </table>
 
-            <!-- Contact -->
-            <div class="pane pane-contact">
-                <div class="pane-bar">
-                    <span class="pane-title">~/contact</span>
-                </div>
-                <div class="pane-body">
-                    <span class="prompt">$</span> <span class="cmd">cat contact.json</span>
-                    <div class="output">
-                        <p>email: dimasadijanto17@gmail.com</p>
-                    </div>
-                    <span>$
-                        <span class="cursor">█</span>
-                    </span>
-                </div>
-            </div>
+                    <h2>The problem</h2>
+                    <p>The client's WordPress site got compromised. During incident response we found malicious files planted on the server, a spam-sending script, and RCE backdoors. Basically what happens when a page-builder plugin and shared hosting sit unpatched for too long. As part of the cleanup, the hosting provider's firewall started blocking the page builder's cloud compiler too, so the client couldn't even edit their own site anymore after the malware was removed.</p>
+                    <p>I was brought in to fix the immediate problem and make a call: patch the old stack, or rebuild.</p>
 
-        </div>
+                    <h2>The decision</h2>
+                    <p>I went with a full rebuild as a static site instead of patching WordPress. Reasoning:</p>
+                    <ul>
+                        <li><strong>Attack surface.</strong> A static site has no server-side app code, no database, no admin login to brute-force. Most of what made the original site vulnerable (mutable database, PHP runtime, plugin code) just isn't there anymore.</li>
+                        <li><strong>No third-party dependency risk.</strong> The page builder that broke the client's editing workflow was a proprietary cloud service outside my control. Removing that dependency removed a single point of failure.</li>
+                        <li><strong>Content as code.</strong> Moving content into version-controlled files instead of a database gives you an audit trail for free. Every content change is a commit, not an invisible database write.</li>
+                    </ul>
+                    <p>The trade-off, and I was upfront with the client about this, is they lose WordPress's self-service editing. Updating content now goes through a developer instead of a non-technical staff member logging into a dashboard. For a site that's mostly stable marketing/case-study content and not a blog with daily posts, that trade-off made sense here, but it's a real cost, not a free upgrade, and I told them that.</p>
+
+                    <h2>What I built</h2>
+                    <ul>
+                        <li>Full site rebuild in Astro: home, about, contact, solutions (4 categories), services (6 offerings)</li>
+                        <li>A project showcase with 130+ individual case-study pages, paginated listings, and prev/next navigation</li>
+                        <li>Full bilingual support (English + Indonesian) via Astro's native i18n routing, with every UI string and nav label translated</li>
+                        <li>A data migration pipeline: a script that pulled all project records and their images directly out of the old WordPress database, rather than hand-copying 130+ entries</li>
+                        <li>Image optimization pass converting key assets to Astro's <code>&lt;Image&gt;</code> component for automatic WebP output</li>
+                    </ul>
+
+                    <h2>Verifying the content</h2>
+                    <p>The client's brief for the rebuild wasn't a reliable source of truth on its own, turned out several details in it (certification numbers, a client name in a case study) didn't match reality. So I cross-referenced three sources to catch this: the live production site, a local mirror of the original WordPress install, and the raw database export. That process caught a bunch of factual errors before they made it into the new site. Good reminder that what the client tells you and what's actually true aren't always the same thing, worth double-checking.</p>
+
+                    <h2>What I'd do differently</h2>
+                    <ul>
+                        <li><strong>Plan the i18n scope earlier.</strong> Translating 130+ case-study detail pages was out of scope for the initial pass, so they currently stay in English even on the Indonesian version of the site. In hindsight I'd have flagged this trade-off with the client before building rather than after.</li>
+                        <li><strong>Image handling for bulk content.</strong> The sitewide assets (logo, badges, hero images) are fully optimized, but most of the project photography still loads as plain images instead of through Astro's image pipeline. Restructuring that would've meant importing 100+ images as modules, a decision that's easy in isolation but gets expensive at scale, and one I'd budget time for upfront next time.</li>
+                    </ul>
+
+                    <h2>Outcome</h2>
+                    <p>The rebuilt site runs with zero server-side attack surface, in two languages, with content the client's team can review and I can update through normal version control instead of a vulnerable admin panel.</p>
+                </div>
+
+                <div class="case-study" id="cs-pdf-viewer">
+                    <h1>Ditching the PDF library in a legacy Android app</h1>
+
+                    <table class="meta-table">
+                        <tr><td>Status</td><td>Running in production now, not a proposal</td></tr>
+                        <tr><td>Role</td><td>Solo developer</td></tr>
+                        <tr><td>Stack</td><td><code>Android</code> <code>Kotlin</code> <code>Bosnet framework</code> <code>AGP 3.6.4</code> <code>Java 8</code> <code>Gradle 6.5</code></td></tr>
+                    </table>
+
+                    <h2>Why this happened</h2>
+                    <p>Google Play started enforcing 16KB page size alignment for native <code>.so</code> files. The app was using <code>com.github.barteksc:android-pdf-viewer:3.1.0-beta.1</code>, which bundles PDFium (native PDF engine) compiled for 4 architectures. Those native libs were only 4KB-aligned, so uploads got blocked.</p>
+                    <p>The catch: the project's still on AGP 3.6.4 / Java 8, a 2020-era toolchain. Can't just upgrade the whole project to fix one library, too much breaking-change risk elsewhere.</p>
+
+                    <h2>What I tried before giving up on the library</h2>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Option</th><th>Outcome</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Newer library version with 16KB support</td><td>Found <code>io.github.oothp:android-pdf-viewer:3.2.0-beta06</code> on Maven Central, artifact was broken, 76KB instead of the expected 10-20MB</td></tr>
+                            <tr><td>Use it anyway</td><td>Nope, compiled with Java 17, incompatible with AGP 3.6.4</td></tr>
+                            <tr><td>Fork it, downgrade the build config to match the project</td><td>Tried this. Cascading Gradle/AGP/dependency mess, Guava variant conflicts, Gradle version mismatches, missing plugin declarations. Rabbit hole.</td></tr>
+                            <tr><td>Upgrade whole project to AGP 8 / Java 17</td><td>Nope, 1-2 weeks, high risk, way overkill just to fix a PDF viewer</td></tr>
+                            <tr><td><strong>Use Android's built-in <code>PdfRenderer</code> instead</strong></td><td><strong>This.</strong> No native deps, works fine on Java 8.</td></tr>
+                        </tbody>
+                    </table>
+                    <p>About 3 hours in, still no working build, decided to stop chasing the library and just build it myself instead. Ended up being the right call, took about 4 hours total and now it's just... solved, permanently.</p>
+
+                    <h2>What I built</h2>
+                    <ul>
+                        <li><strong>PdfRendererHelper.</strong> Wraps <code>android.graphics.pdf.PdfRenderer</code> (built into Android since API 21). Opens the PDF via <code>ParcelFileDescriptor</code>, renders a page to a <code>Bitmap</code> keeping aspect ratio, exposes <code>pageCount</code>, closes cleanly to avoid leaks.</li>
+                        <li><strong>PdfPageAdapter.</strong> RecyclerView adapter, one page per list item. Renders each page on <code>Dispatchers.IO</code> so it never blocks the UI thread. Uses <code>SupervisorJob</code> so one page failing doesn't kill the rest. Cancels the coroutine scope on cleanup.</li>
+                        <li><strong>ZoomableImageView.</strong> Custom <code>ImageView</code>, no external zoom library. <code>Matrix</code> for scale/pan (transform math, not re-rendering bitmaps, cheap). <code>ScaleGestureDetector</code> for pinch, <code>GestureDetector</code> for double-tap toggle, manual <code>ACTION_MOVE</code> for single-finger pan. <code>fixTranslation()</code> keeps the image from being dragged off-screen. Had to add <code>parent?.requestDisallowInterceptTouchEvent()</code> because panning a zoomed page was getting swallowed by the RecyclerView as a scroll, classic nested-gesture conflict.</li>
+                        <li><strong>PdfScrollHandle.</strong> Small TextView overlay, "page X / Y", updates on scroll, auto-hides. Basically recreating the old library's scroll indicator.</li>
+                    </ul>
+
+                    <h2>Wiring it up</h2>
+                    <ul>
+                        <li>Dropped <code>com.github.barteksc:android-pdf-viewer</code> from <code>app/build.gradle</code></li>
+                        <li>Swapped <code>PDFView</code> for <code>RecyclerView</code> in both <code>fragment_pdf_viewer.xml</code> and <code>fragment_product_learning.xml</code></li>
+                        <li><code>LearningPdfFragment.kt</code> / <code>ProductLearningFragment.kt</code>: removed the old <code>.fromFile().load()</code> chain, wired in <code>PdfRendererHelper</code> + <code>PdfPageAdapter</code>, added cleanup in <code>onDestroyView()</code></li>
+                    </ul>
+
+                    <h2>Numbers</h2>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Metric</th><th>Before</th><th>After</th><th>Change</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Debug APK</td><td>~44.8 MB</td><td>~25 MB</td><td>-20 MB</td></tr>
+                            <tr><td>Release APK (raw)</td><td>~40 MB</td><td>21.2 MB</td><td>-18.8 MB</td></tr>
+                            <tr><td>Release APK (download size)</td><td>~38 MB</td><td>19.4 MB</td><td><strong>-18.6 MB (~49%)</strong></td></tr>
+                            <tr><td>Native .so libraries</td><td>~20 MB across 4 architectures</td><td><strong>0 MB</strong></td><td>Fully eliminated</td></tr>
+                            <tr><td>16KB page size compliance</td><td>Blocked</td><td>Pass</td><td>Fixed</td></tr>
+                            <tr><td>External PDF dependency</td><td>1 (unmaintained fork risk)</td><td>0</td><td>Removed</td></tr>
+                        </tbody>
+                    </table>
+                    <p>The <code>lib/</code> folder disappeared from the APK analyzer entirely once the library was gone, that library was the only native code in the whole app.</p>
+
+                    <h2>Why one library was 20MB</h2>
+                    <p>Native code gets compiled separately per CPU architecture. One PDF engine (~4-6MB of compiled C++) times 4 architectures (armeabi-v7a, arm64-v8a, x86, x86_64) equals ~20MB in the APK, even though any single phone only ever uses one of those four. Easy to miss until you actually look at the APK analyzer. Same thing applies to video codecs, ML models, maps SDKs, anything wrapping native rendering.</p>
+                    <p>Rule of thumb: if a library ships <code>.so</code> files, assume ~4x the size a "normal" library would be.</p>
+
+                    <h2>What I'd do differently / keep in mind next time</h2>
+                    <ul>
+                        <li>Java version + AGP version compatibility isn't something you can Gradle-file your way around. If a library's compiled with Java 17, it's not running on AGP 3.6.4, full stop.</li>
+                        <li>~3 hours with no working build is the signal to stop and reconsider, not push harder.</li>
+                        <li>Check if Android already does this natively before reaching for a library. <code>PdfRenderer</code> existed since API 21, the whole dependency was solving an already-solved problem.</li>
+                        <li>Building it myself wasn't slower. ~4 hours vs 3+ hours already spent fighting versions with nothing to show for it.</li>
+                        <li><code>requestDisallowInterceptTouchEvent</code> is the fix whenever a custom gesture view sits inside a scrollable parent (RecyclerView, ViewPager, etc.) and gestures get stolen. Not obvious from the View API, good to remember.</li>
+                        <li>Every dependency is a future liability, not just a today decision. Before adding one: is it maintained, does it ship native code, does the platform already do this, could I build it myself in under a week.</li>
+                    </ul>
+                </div>
+
+                <div class="case-study" id="cs-approval-engine">
+                    <h1>Multi-Level Approval Engine</h1>
+
+                    <table class="meta-table">
+                        <tr><td>Project</td><td>An enterprise lubrication management platform</td></tr>
+                        <tr><td>Role</td><td>Fullstack developer (backend: C#/.NET Framework on Bosnet, frontend: Angular)</td></tr>
+                        <tr><td>Stack</td><td><code>C#</code> <code>.NET Framework 4.8</code> <code>Bosnet</code> <code>SQL Server</code></td></tr>
+                    </table>
+
+                    <h2>Context</h2>
+                    <p>The platform is an enterprise lubrication management system built on Bosnet, a proprietary in-house framework (C# .NET Framework 4.8, SQL Server, on-premise Windows Service). Several transactional workflows in the system, Assessments, Oil Consumption records, and Lube Stock movements, required review and sign-off before they could be finalized. Each workflow had different stakeholders, different numbers of review stages, and different rules for who needed to be notified at each step. There wasn't an existing generalized way to express "this transaction needs N levels of review, with conditional skips," so that logic would otherwise have been duplicated per module.</p>
+
+                    <h2>Problem</h2>
+                    <p>Assessments, Oil Consumption, and Lube Stock transactions each needed configurable approval chains, not a fixed 2-step "submit → approve" flow. Requirements included a variable number of approval levels depending on transaction type and context (value thresholds, site, or role availability), skip logic for when a level's approver role wasn't applicable or required, notification cascades where each transition (submitted, approved at level N, rejected, fully approved) needed to notify a different context-dependent set of people, and mobile button visibility, since the companion Android app needed to show/hide approve/reject actions per user per transaction based on whose turn it was, without duplicating the approval-state logic on the client.</p>
+
+                    <h2>Design</h2>
+                    <p>The engine treats an approval chain as an ordered sequence of levels tied to a transaction type. State (current level, status, history) is persisted per transaction, and each transition is validated server-side before it's allowed to proceed. The mobile app only ever reflects state, it doesn't own it. That was a deliberate choice: with three transaction types sharing the same underlying state machine, keeping the authority for "whose turn is it" and "can this user act" entirely server-side avoided drift between web, mobile, and any future clients.</p>
+                    <p>Skip logic was implemented as a per-level applicability check evaluated at chain-build time rather than hardcoded per transaction type, so adding a new condition for skipping a level didn't require touching the transition logic itself.</p>
+                    <p>Each transition also raises an event (submitted, approved at level N, rejected, fully approved) that a separate <a href="#" class="inline-link" data-target="cs-notification-mapping">notification mapping system</a> listens to for routing who gets notified. The approval engine doesn't know or care who's on the recipient list, that's intentionally someone else's problem.</p>
+
+                    <h2>Constraints from the Bosnet framework</h2>
+                    <p>Bosnet's <code>CreateObject</code> service locator pattern makes conventional unit testing and mocking impractical, there's no clean seam to substitute dependencies. Combined with <code>BosSafeTx</code> for transaction management, this meant the approval state transitions had to be reasoned through carefully by hand (and reviewed manually against edge cases) rather than covered by an automated test suite. That's a known limitation of the framework, not something scoped to be solved within this feature.</p>
+
+                    <h2>Notable bug caught during development</h2>
+                    <p>Concurrent approval actions on the same transaction (two approvers acting near-simultaneously) surfaced a race condition, a classic case for <code>UPDLOCK</code>/<code>ROWLOCK</code> at the SQL level. This is the kind of logic error that doesn't show up as a compile or runtime exception, it only shows up under concurrent load, which made it a valuable catch relative to the effort of finding it.</p>
+
+                    <h2>Reconstructing an undocumented invariant</h2>
+                    <p>The original gating function, <code>CanUserApproveAtLevel</code>, decided whether a given user could act at their assigned level. It worked correctly for exactly three levels, but the logic was hand-enumerated per level:</p>
+                    <pre><code>private bool CanUserApproveAtLevel(Guid gdApproved, string szPosition, BosSafeTx safeTx)
+{
+    var approvedData = p_JustGetApproved(gdApproved, safeTx);
+    if (approvedData.bRejected) return false;
+    var allApprovedItemList = approvedData.approvedItemData;
+    var userItem = allApprovedItemList.FirstOrDefault(x =&gt; x.szPosition.Equals(szPosition, StringComparison.OrdinalIgnoreCase));
+    if (userItem == null) return false;
+    int btApprovedLevel = userItem.btApprovedLevel;
+    if (btApprovedLevel == 1) return true;
+    var approvedItemLevel1 = allApprovedItemList.FirstOrDefault(x =&gt; x.btApprovedLevel == 1);
+    if (btApprovedLevel == 2)
+        return approvedItemLevel1 == null || approvedItemLevel1.bApproved || approvedItemLevel1.bAllowToSkipNext;
+    if (btApprovedLevel == 3)
+    {
+        var approvedItemLevel2 = allApprovedItemList.FirstOrDefault(x =&gt; x.btApprovedLevel == 2);
+        bool bL1Skip = approvedItemLevel1?.bAllowToSkipNext ?? false;
+        bool bL1Approved = approvedItemLevel1?.bApproved ?? false;
+        bool bL2Skip = approvedItemLevel2?.bAllowToSkipNext ?? false;
+        bool bL2Approved = approvedItemLevel2?.bApproved ?? false;
+        return (bL1Skip &amp;&amp; bL2Skip) || (bL1Approved &amp;&amp; bL2Skip) || (bL1Approved &amp;&amp; bL2Approved);
+    }
+    return false;
+}</code></pre>
+                    <p>Adding a fourth approval level would've meant hand-deriving a new set of AND/OR combinations by inspection, exactly the kind of manual boolean enumeration that's easy to get subtly wrong.</p>
+                    <p><strong>Recovering the actual rule.</strong> <code>bAllowToSkipNext</code> doesn't mean "this level is bypassed," it means "I'm letting the next level go before me, but I still have to approve eventually." Working from that, I reconstructed the full truth table for level 3 directly against the existing behavior:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>L1.Skip</th><th>L1.Approved</th><th>L2.Skip</th><th>L2.Approved</th><th>Can L3 approve?</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>No</td></tr>
+                            <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>No</td></tr>
+                            <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>No</td></tr>
+                            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>No</td></tr>
+                            <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>No</td></tr>
+                            <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>Yes</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>Yes</td></tr>
+                            <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>Yes</td></tr>
+                            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>No</td></tr>
+                            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>No</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>Yes</td></tr>
+                            <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>Yes</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>No</td></tr>
+                            <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>Yes</td></tr>
+                            <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>Yes</td></tr>
+                            <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>Yes</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Two combinations decide everything: either the entire chain below defers together (a clean pass-through, nobody's approved yet but everyone agreed to hand it off), or level 1 has genuinely approved, in which case every level between it and the current one just needs to be resolved (approved or deferred, in any order). Level 1 acts as a fixed anchor: its own defer only counts if every level below it also defers as a block. The instant one level in the middle actually approves instead of deferring, level 1's approval stops being optional.</p>
+                    <p>A useful mental model: think of it as a relay baton. If every runner before you agrees to let the next one carry it, the baton passes cleanly all the way down, untouched. But the moment someone in the middle actually runs their leg instead of deferring, the clean pass-through breaks, and now the start line (level 1) has to be real, not just agreed-upon.</p>
+                    <p>This generalizes to any number of levels without adding new hand-written branches:</p>
+                    <pre><code>private bool CanUserApproveAtLevel(Guid gdApproved, string szPosition, BosSafeTx safeTx)
+{
+    var approvedData = p_JustGetApproved(gdApproved, safeTx);
+    if (approvedData.bRejected) return false;
+    var allApprovedItemList = approvedData.approvedItemData;
+    var userItem = allApprovedItemList.FirstOrDefault(x =&gt;
+        x.szPosition.Equals(szPosition, StringComparison.OrdinalIgnoreCase));
+    if (userItem == null) return false;
+    int currentLevel = userItem.btApprovedLevel;
+    if (currentLevel == 1) return true;
+    return CanReachLevel(allApprovedItemList, currentLevel);
+}
+
+/// &lt;summary&gt;
+/// A level N can be approved if either:
+///   (A) every level below N deferred (bAllowToSkipNext), passing the zone straight down, OR
+///   (B) level 1 genuinely approved, and every level between 1 and N is resolved
+///       (approved, deferred, or simply not assigned).
+/// Level 1 is a fixed anchor by design, if a future requirement allows any level
+/// to serve as the anchor, this formula needs to change.
+/// &lt;/summary&gt;
+private bool CanReachLevel(List&lt;ApprovedItemData&gt; items, int level)
+{
+    if (level &lt;= 1) return true;
+    var priorLevels = Enumerable.Range(1, level - 1)
+        .Select(lvl =&gt; items.FirstOrDefault(x =&gt; x.btApprovedLevel == lvl))
+        .ToList();
+    bool bFullDefer = priorLevels.All(item =&gt; item != null &amp;&amp; item.bAllowToSkipNext);
+    if (bFullDefer) return true;
+    var anchor = priorLevels[0];
+    if (anchor == null || !anchor.bApproved) return false;
+    for (int i = 1; i &lt; priorLevels.Count; i++)
+    {
+        var item = priorLevels[i];
+        bool resolved = item == null || item.bApproved || item.bAllowToSkipNext;
+        if (!resolved) return false;
+    }
+    return true;
+}</code></pre>
+                    <p>Splitting <code>CanReachLevel</code> out also had a practical side benefit in a codebase where <code>CreateObject</code>'s service locator pattern makes conventional mocking impractical: it takes plain data in and returns a bool, no framework dependency involved, so it's one of the few pieces of this logic that can actually be unit tested in isolation.</p>
+                    <p><strong>A separate, easily-conflated concern: acting vs. completing.</strong> <code>CanUserApproveAtLevel</code> only answers "can this level act right now," it governs order, not requirement. Deferring is never a substitute for approving, it only changes when a level is allowed to try. Whether the transaction is fully approved is a completely independent, much simpler check: every level's <code>bApproved</code> must eventually be true, regardless of the order that happened in:</p>
+                    <pre><code>bool bFullyApproved = allApprovedItemList.All(x =&gt; x.bApproved);</code></pre>
+                    <p>Keeping "who can act now" and "is this done" as two separate questions, rather than folding completion logic into the gating function, kept each piece small enough to reason about on its own, which mattered given there was no test suite to lean on instead.</p>
+
+                    <h2>Technical highlights</h2>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Area</th><th>Detail</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Backend</td><td>C# .NET Framework 4.8, Bosnet (<code>CreateObject</code>, <code>BosSafeTx</code>)</td></tr>
+                            <tr><td>Data integrity</td><td>No database foreign keys in this codebase by team convention, referential integrity enforced in application logic, so approval-state consistency had to be validated defensively at the service layer</td></tr>
+                            <tr><td>Mobile</td><td>Approval action visibility (approve/reject buttons) driven by server-resolved state, not client-side inference</td></tr>
+                            <tr><td>Concurrency</td><td>Row-level locking (<code>UPDLOCK</code>/<code>ROWLOCK</code>) applied after identifying a race condition in concurrent approval actions</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Outcome</h2>
+                    <p>The approval engine now backs all three transaction types (Assessments, Oil Consumption, Lube Stock) through a single shared state machine rather than three separate implementations. New approval policies can be added through configuration rather than code changes in the common case.</p>
+
+                    <h2>Skills demonstrated</h2>
+                    <ul>
+                        <li>Designing a shared state machine for multiple transaction types instead of duplicating flow logic per feature</li>
+                        <li>Keeping approval authority server-side so web, mobile, and future clients can't drift out of sync</li>
+                        <li>Diagnosing and fixing a concurrency bug that wouldn't surface without concurrent load</li>
+                        <li>Reverse-engineering an undocumented invariant out of hand-enumerated code and generalizing it into a rule that scales to any number of levels</li>
+                        <li>Isolating the one testable seam (<code>CanReachLevel</code>) out of an otherwise untestable, framework-coupled codebase</li>
+                        <li>Working within legacy framework constraints (no DI/mocking, no FK-based integrity) without compromising correctness</li>
+                    </ul>
+                </div>
+
+                <div class="case-study" id="cs-notification-mapping">
+                    <h1>Notification Mapping System</h1>
+
+                    <table class="meta-table">
+                        <tr><td>Project</td><td>An enterprise lubrication management platform</td></tr>
+                        <tr><td>Role</td><td>Fullstack developer (backend: C#/.NET Framework on Bosnet, frontend: Angular)</td></tr>
+                        <tr><td>Stack</td><td><code>C#</code> <code>.NET Framework 4.8</code> <code>Bosnet</code> <code>SQL Server</code> <code>Angular 7</code></td></tr>
+                    </table>
+
+                    <h2>Context</h2>
+                    <p>Alongside the <a href="#" class="inline-link" data-target="cs-approval-engine">multi-level approval engine</a>, the platform also needed a way to decide who gets notified, for what event, and through what channel, across Assessments, Oil Consumption, Lube Stock, and Issues. Notification recipients weren't a fixed list, they varied by event type, transaction type, site, and role, and needed to be maintainable by non-developers without a deployment.</p>
+
+                    <h2>Problem</h2>
+                    <p>Hardcoding recipient logic per event, as the approval engine's transitions would have required if left unaddressed, would have coupled notification rules tightly to approval code and made every policy change a code change. Notification rules also needed to change independently of approval logic, and by people who aren't developers.</p>
+
+                    <h2>Design</h2>
+                    <p>Built as a standalone CRUD module: a data model mapping event type to recipient rule (role, site, or specific user), independent of any single feature; an Angular DataTables front end for browsing and managing mappings, with cascading dropdowns (selecting a site scopes the available roles/users) to keep the configuration UI usable at scale rather than a flat unconstrained form; and a reminder scheduler (<code>SchedulerReminderNotifications</code>) built on Bosnet's <code>IWorkingThread</code>/<code>SchedulerLib</code> infrastructure, using <code>UNION</code> SQL queries across Assessments, Oil Consumption, Issues, and Approvals to produce a single reminder feed, resolved against <code>NotifMapping</code> for recipient routing.</p>
+                    <p>The key architectural decision was decoupling notification routing from whatever produces the event. The approval engine raises events, this system independently resolves who should know about it. That meant the approval chain's transition logic didn't need to know anything about recipients, and notification policy could change without touching approval code, and vice versa.</p>
+
+                    <h2>Technical highlights</h2>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Area</th><th>Detail</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Backend</td><td>C# .NET Framework 4.8, Bosnet (<code>IWorkingThread</code>/<code>SchedulerLib</code>), <code>UNION</code> queries across four modules</td></tr>
+                            <tr><td>Frontend</td><td>Angular 7, Angular DataTables, ng-multiselect-dropdown, RxJS</td></tr>
+                            <tr><td>Data integrity</td><td>No database foreign keys in this codebase by team convention, referential integrity enforced in application logic, so mapping consistency had to be validated defensively at the service layer</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Outcome</h2>
+                    <p>The notification mapping system is reused as the routing layer for reminders across Assessments, Oil Consumption, Lube Stock, and Issues. New notification rules can be added through configuration rather than code changes in the common case.</p>
+
+                    <h2>Skills demonstrated</h2>
+                    <ul>
+                        <li>Decoupling event production (approval transitions) from event consumption (notification routing) as separate concerns</li>
+                        <li>Building configuration-driven admin tooling (Angular DataTables + cascading dropdowns) so non-developers can maintain business rules</li>
+                        <li>Designing a reusable routing layer instead of hardcoding recipients per feature</li>
+                    </ul>
+                </div>
+
+                <div class="case-study" id="cs-mail-server">
+                    <h1>Building a Production Mail Server from Scratch</h1>
+
+                    <table class="meta-table">
+                        <tr><td>Role</td><td>Infrastructure / DevOps (personal project)</td></tr>
+                        <tr><td>Stack</td><td><code>Postfix</code> <code>Dovecot</code> <code>OpenDKIM</code> <code>SpamAssassin</code> <code>Fail2ban</code> <code>Let's Encrypt</code> <code>Apache</code> <code>DNS</code> <code>Bash</code></td></tr>
+                    </table>
+
+                    <h2>Problem</h2>
+                    <p>A lot of small businesses end up either paying for hosted email or running a mail server that's misconfigured just enough to get flagged as spam. I wanted to see if I could build the real thing myself: a self-hosted mail server on a Linux VPS that could host multiple domains, run virtual mailboxes, support encrypted SMTP/IMAP, pass modern email authentication, and actually land in Gmail's inbox instead of spam.</p>
+
+                    <h2>Architecture</h2>
+                    <pre><code>Internet
+   │
+   ▼
+Postfix (SMTP)
+   │
+   ▼
+Dovecot LMTP delivery
+   │
+   ▼
+Virtual mailboxes
+   │
+   ▼
+Mail clients (IMAP)</code></pre>
+                    <p>Plus OpenDKIM, SpamAssassin, Fail2ban, Let's Encrypt, Apache, and Webmin sitting around that core.</p>
+
+                    <h2>Major challenges</h2>
+                    <p><strong>Virtual mailboxes.</strong> Instead of creating a Linux user for every mailbox, I set up Postfix's virtual mailbox architecture with Dovecot LMTP delivery: virtual mailbox maps, alias maps, dedicated mail storage, and UID/GID mapping. That keeps mail users separate from OS users entirely, which makes managing multiple domains a lot easier and cuts down the attack surface.</p>
+                    <p><strong>DNS authentication.</strong> Configured SPF, DKIM, and DMARC, then kept iterating against Mail Tester until every check passed.</p>
+                    <p><strong>Gmail deliverability.</strong> This was the hardest one. Gmail was rejecting outgoing mail even though SPF and DKIM were both valid. Turned out the VPS didn't have a PTR record, no reverse DNS. Once I got that configured with the hosting provider, delivery to Gmail cleared up. Good reminder that SMTP reputation depends on forward-confirmed reverse DNS and DNS consistency, not just SPF/DKIM being technically correct.</p>
+                    <p><strong>TLS certificates.</strong> Let's Encrypt for SMTP/IMAP, with renewal issues along the way from port conflicts, DNS validation failures, and Apache config getting in the way.</p>
+                    <p><strong>Spam protection.</strong> SpamAssassin for filtering, Fail2ban for brute-forcing attempts against SMTP auth.</p>
+
+                    <h2>Troubleshooting along the way</h2>
+                    <ul>
+                        <li>SMTP authentication failures</li>
+                        <li>IMAP connectivity issues</li>
+                        <li>DNS propagation delays</li>
+                        <li>Mail routing problems</li>
+                        <li>DKIM signing failures</li>
+                        <li>SPF syntax errors</li>
+                        <li>File permission issues</li>
+                        <li>TLS certificate validation failures</li>
+                        <li>Gmail rejecting outgoing mail</li>
+                        <li>Reverse DNS configuration</li>
+                    </ul>
+
+                    <h2>Results</h2>
+                    <p>Ended up with a production-capable mail server: multi-domain support, virtual mailboxes, secure SMTP/IMAP, DKIM signing, SPF and DMARC validation, TLS encryption, spam filtering, and reliable Gmail delivery. Hit a 10/10 on Mail Tester, and mail lands in the Gmail inbox instead of spam after fixing the reverse DNS.</p>
+
+                    <h2>Lessons learned</h2>
+                    <p>Building this made it obvious that reliable email delivery isn't one application working correctly, it's SMTP services, DNS records, TLS certificates, authentication protocols, and server reputation all lining up at once. Most of the real debugging was evidence-driven: correlating logs, checking DNS propagation, and figuring out how providers like Gmail actually evaluate incoming mail rather than guessing.</p>
+
+                    <h2>Skills demonstrated</h2>
+                    <ul>
+                        <li>Linux administration: service management, file permissions, system configuration</li>
+                        <li>Networking: SMTP, IMAP, DNS, TLS, reverse DNS</li>
+                        <li>Security: DKIM, SPF, DMARC, TLS, spam protection, brute-force mitigation</li>
+                        <li>Troubleshooting: log analysis, DNS debugging, email deliverability, authentication debugging, certificate management</li>
+                        <li>Infrastructure: service integration, production deployment, monitoring and validation</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
     </div>
 <script>
-    function bindDirs(selector, expandId, dataKey, cmdPrefix) {
-        const dirs = document.querySelectorAll(selector);
-        const expand = document.getElementById(expandId);
-        dirs.forEach(dir => {
-            dir.addEventListener('click', () => {
-                const already = dir.classList.contains('active');
-                dirs.forEach(d => d.classList.remove('active'));
-                expand.innerHTML = '';
-                if (!already) {
-                    dir.classList.add('active');
-                    expand.innerHTML =
-                        `<span class="prompt">$</span> <span class="cmd">${cmdPrefix} ${dir.textContent}</span>` +
-                        `<div class="output expand-content">${dir.dataset[dataKey]}</div>`;
-                }
+    function showCaseStudy(targetId) {
+        const links = document.querySelectorAll('.work-link');
+        const studies = document.querySelectorAll('.case-study');
+        const filePath = document.getElementById('file-path');
+        links.forEach(l => l.classList.toggle('active', l.dataset.target === targetId));
+        studies.forEach(s => s.classList.toggle('active', s.id === targetId));
+        filePath.textContent = `case-studies/${targetId.replace('cs-', '')}.md`;
+        document.querySelector('.readme').scrollTop = 0;
+    }
+
+    function bindWorkNav() {
+        document.querySelectorAll('.work-link, .inline-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                showCaseStudy(link.dataset.target);
             });
         });
     }
 
-    bindDirs('.dir',         'stack-expand',   'content', 'ls');
-    bindDirs('.project-dir', 'project-expand', 'detail',  'ls');
+    bindWorkNav();
 </script>
 </body>
 
